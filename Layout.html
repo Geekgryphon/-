@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.8/css/bootstrap.min.css">
+    <!-- bootstrap引入本身就有重置並統一瀏覽器預設樣式的 CSS 基礎設定 -->
+    <title>Document</title>
+
+    <style>
+        .responsive-box {
+
+            background-color: lightblue;
+        }
+
+
+        @media (max-width: 576px) {
+            .responsive-box {
+            background-color: lightgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- vscode輔助extension - Bootstrap IntelliSense -->
+
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+
+    <!-- 要拆板都要包在一個container內 -->
+
+    <div class="container">
+        <!-- container
+             container-sm
+             container-md
+             container-lg
+             container-xl
+             container-xxl
+             container-fluid -->
+    </div> 
+
+
+    <!-- Breakpoints Media -->
+
+    <!-- <p class="responsive-box">這是一個測試用的media</p> -->
+
+     <!-- Containers (又稱畫布或框架) 最外層以下任一種用一個 -->
+    <div class="container"></div>
+    <div class="container-sm">100% wide until small breakpoint</div>
+    <div class="container-md">100% wide until medium breakpoint</div>
+    <div class="container-lg">100% wide until large breakpoint</div>
+    <div class="container-xl">100% wide until extra large breakpoint</div>
+    <div class="container-xxl ">100% wide until extra extra large breakpoint</div>
+    <div class="container-fluid"></div>
+
+    <br/>
+    
+    <!-- grid System 一定要包在container內 -->
+
+    <!-- grid範例1 -->
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col"> 1 of 2</div>
+            <div class="col"> 2 of 2</div>
+        </div>
+        <div class="row">
+            <div class="col">1 of 3</div>
+            <div class="col">2 of 3</div>
+            <div class="col">3 of 3</div>
+        </div>
+        <div class="row">
+            <div class="col">1 of 3</div>
+            <div class="col-6">2 of 3</div>
+            <div class="col">3 of 3</div>
+        </div>
+    </div>
+
+
+    <!-- grid範例2 每幾個col就換下一個row -->
+     <!-- row-cols-sm-2 -->
+
+    <div class="container text-center">
+        <div class="row row-cols-3">
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+        </div>
+    </div>
+
+    <br/>
+
+    <!-- Columns Flex容器 -->
+
+    <!-- 寫在row，整行 -->
+    align-items-start       上對齊
+    align-items-center      垂直置中
+    align-items-end         下對齊
+    <!-- 寫在col，單個欄-->
+    align-self-start        上對齊
+    align-self-center       垂直置中
+    align-self-end          下對齊
+    <!-- 寫在row，整行都一樣 -->
+    justify-content-start
+    justify-content-center
+    justify-content-end
+    justify-content-around
+    justify-content-between
+    justify-content-evenly
+
+    <!-- Gutters 欄位左右的間距 -->
+
+    <!-- 寫在row，整行 -->
+    gx-5  gy-5 g-2  g-lg-3
+
+    -------------------------------------
+
+    g-col-4
+    
+
+
+    <script src="Bootstrap/bootstrap-5.3.8/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
