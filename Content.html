@@ -1,0 +1,110 @@
+    h1 
+    h2 
+    h3 
+    h4 
+    h5 
+    h6
+    
+    display-1 
+    display-2 
+    display-3 
+    display-4 
+    display-5 
+    display-6
+
+    text-body                                                   (主體文字色)
+    text-body-secondary                                         (次要文字色)
+    text-muted                                                  (淡化文字色)
+    text-primary                                                (主色系文字)
+
+
+    lead                    使用在p標籤                         (增加字體大小, 增加行高)
+    initialism              使用在abbr標籤                      (比原來的文字字體更小)
+    blockquote              使用在blockquote標籤
+    blockquote-footer       使用在div, figcaption, footer
+    list-unstyled           使用在ul, ol                        (不會顯示圓點，左側不會有縮排)
+    list-inline             使用在ul, ol                        (所有列表項目會橫向排列，每個項目之間會保留一點間距)
+    list-inline-item        使用在li                            (讓每個項目顯示為 inline-block)
+    text-truncate           使用在diplay為block或inline-block    (截斷過長的文字並加上省略號)
+                            且必須設定固定寬度 
+
+
+    img-fluid                                                   圖片最大寬度為 100%，不會放大超過原始大小
+    img-thumbnail                                               加上邊框與圓角，呈現縮圖樣式
+    rounded                                                     上圓角（但無邊框）
+    float-start                                                 元素靠左浮動，文字環繞右側
+    float-end                                                   元素靠右浮動，文字環繞左側
+    float-none                                                  取消浮動
+    mx-auto d-block                                             圖片置中(margin為auto, display設為block讓margin生效)
+    text-center                                                 文字置中
+    text-start                                                  文字靠左
+    text-end                                                    文字靠右
+
+    <!-- 根據瀏覽器支援選擇圖片格式 -->
+     <!-- 如果瀏覽器支援 SVG，就優先載入這張 SVG 圖，不行就載入下方圖片。 -->
+    <picture> 
+        <source srcset="..." type="image/svg+xml">  
+        <img src="..." class="img-fluid img-thumbnail" alt="..."> 
+    </picture>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+
+    <!-- table -->
+
+    <!-- 範例1 -->
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+        </tbody>
+    </table>
+
+    table(table必要使用的class)                               
+
+    table-primary
+    table-secondary
+    table-success
+    table-danger
+    table-warning
+    table-info
+    table-light
+    table-dark
+
+    table-striped                       使用在table                     讓表格的列呈現交錯條紋效果
+    table-striped-columns               使用在table                     讓表格的欄呈現交錯條紋效果
+    table-hover                         使用在table                     滑鼠懸停列時高亮顯示
+    table-bordered                      使用在table                     所有儲存格都加上邊框
+    table-borderless                    使用在table                     移除儲存格邊框
+    table-sm(只有sm)                    使用在table                     將表格的上下 padding 減半
+    table-group-divider                 使用在tr                        在群組資料之間插入一條水平分隔線
+    border-primary                                                     將邊框顏色設為藍色
+
+
+    <!-- Figures 具有非必填說明元素的圖片 -->
+
+    <figure class="figure">
+        <img src="..." class="figure-img img-fluid rounded" alt="...">
+        <figcaption class="figure-caption text-end">A caption for the above image.</figcaption>
+    </figure>
+
+    figure                                                              圖片與說明的容器
+    figure-img                          使用在img                        圖片樣式類別
+    figcaption                          使用在figcaption                 圖片說明文字
+
+    補充: 甚麼時候是用grid 甚麼時候是用table?
+    ✅ 用 <table> 是為了呈現「結構化資料」 
+    ✅ 用 Grid（如 Bootstrap 的 .row / .col-*）是為了做「視覺排版」
+    
