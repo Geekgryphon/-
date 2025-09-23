@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap-5.3.8/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <span>範例一</span>
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="...">
+          <strong class="me-auto">Bootstrap</strong>
+          <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
+    <br/>
+
+    <span>範例二</span>
+      <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+        </div>
+      </div>
+    <br/>
+
+    <span>範例三</span>
+      <div class="toast-container position-static">
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="...">
+          <strong class="me-auto">Bootstrap</strong>
+          <small class="text-body-secondary">just now</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          See? Just like this.
+        </div>
+      </div>
+
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="...">
+          <strong class="me-auto">Bootstrap</strong>
+          <small class="text-body-secondary">2 seconds ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Heads up, toasts will stack automatically
+        </div>
+      </div>
+    </div>
+    <br/>
+
+    <span>範例四</span>
+      <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    <br/>
+
+    <span>範例五</span>
+      <div aria-live="polite" aria-atomic="true" class="position-relative">
+        <!-- Position it: -->
+        <!-- - `.toast-container` for spacing between toasts -->
+        <!-- - `top-0` & `end-0` to position the toasts in the upper right corner -->
+        <!-- - `.p-3` to prevent the toasts from sticking to the edge of the container  -->
+        <div class="toast-container top-0 end-0 p-3">
+
+          <!-- Then put toasts within -->
+          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="..." class="rounded me-2" alt="...">
+              <strong class="me-auto">Bootstrap</strong>
+              <small class="text-body-secondary">just now</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              See? Just like this.
+            </div>
+          </div>
+
+          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="..." class="rounded me-2" alt="...">
+              <strong class="me-auto">Bootstrap</strong>
+              <small class="text-body-secondary">2 seconds ago</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Heads up, toasts will stack automatically
+            </div>
+          </div>
+        </div>
+      </div>
+    <br/>
+
+
+
+    <script src="../Bootstrap/bootstrap-5.3.8/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
