@@ -13,3 +13,29 @@
 工具提示（Tooltip）	        滑鼠懸停時顯示額外資訊，提升操作直覺性。
 進度條（Progress Bar）	    顯示任務完成度，常見於上傳檔案、註冊流程等。
 無限滾動（Infinite Scroll）	自動載入下一批資料，常見於社群平台或商品列表。
+
+
+accordion 手風琴
+alert 警示
+badge 徽章
+breadcrumb 麵包屑
+button 
+button group
+card
+carousel 輪播
+collaspe 折疊
+close button 
+dropdowns 下拉選單
+list groups 列表群組
+modal   彈出視窗
+navbars   導覽
+nav & tabs 導覽與頁籤
+offcanvas 滑出式側邊欄
+pagination 分頁
+progress 進度條
+placeholders 佔位符
+popovers 彈出提示框
+scrollspy 滾動監控
+spinner  載入指示
+toasts 吐司提示
+tooltips 工具提示
